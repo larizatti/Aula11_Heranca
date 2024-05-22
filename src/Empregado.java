@@ -68,5 +68,13 @@ public class Empregado {
         return aux;
 
     }
-    
+    //Método para imprimir
+    public void imprimir(){
+
+    System.out.println("Nome: " + getNome());
+    System.out.println("Endereço: " + getEndereço());
+    System.out.println("Salario: " + getSalario());
+
+
+    }
 }

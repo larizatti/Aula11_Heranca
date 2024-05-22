@@ -1,15 +1,21 @@
 public class Horista extends Empregado{
     private double horas;
+    private double valor_hora;
 
     //Construtor
-    public Horista (String n, String e, double h) {
-        super (n,e);
-        horas = h;
+    public Horista (String nome, String endereço, double horas, double valor_hora) {
+        super (nome,endereço);
+        this.horas = horas;
     }
+
+    public Horista (double horas){
+        this.horas = horas;
+    }
+
     //Metodos de acesso
 
-    public void set_horas (double h){
-        horas = h;
+    public void set_horas (double horas){
+       this.horas = horas;
     }
     
     public double get_horas(){
@@ -17,7 +23,7 @@ public class Horista extends Empregado{
     }
 
     public void CalcularSalario(){
-        salario = horas*50;
+        salario = horas * valor_hora;
     }
 }
 
