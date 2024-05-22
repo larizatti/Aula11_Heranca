@@ -9,9 +9,10 @@ public class Mensalista extends Empregado{
         this.cargo = cargo;
     } 
     
-    public Mensalista(String nome, String endereço, double salario, String cargo){
-            super (nome,endereço,salario); //Coloco nesse super o que eu herdei da classe pai
+    public Mensalista(String nome, String endereço, String cargo){
+            super (nome,endereço); //Coloco nesse super o que eu herdei da classe pai
             this.cargo = cargo;
+    }
             
     public void CalcularSalario(){
 //equals função utilizada para comparar texto
@@ -21,6 +22,10 @@ public class Mensalista extends Empregado{
         else if (cargo.equals("Pleno")){
         salario = 3500;
         }
+        else{
+            salario = 5500;
         }
-    } 
+        }
+        }
+    
     

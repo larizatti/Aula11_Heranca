@@ -23,10 +23,10 @@ public class Empregado {
         return salario;
     }
     
-    public Empregado(String nome, String endereço, double salario) {
+    public Empregado(String nome, String endereço) {
         this.nome = nome;
         this.endereço = endereço;
-        this.salario = salario;
+
     }
 
     public Empregado() {
